@@ -1,13 +1,12 @@
 {
-  "name": "handlebars-helpers",
+  "name": "helpers-for-handlebars",
   "description": "More than 130 Handlebars helpers in ~20 categories. Helpers can be used with Assemble, Generate, Verb, Ghost, gulp-handlebars, grunt-handlebars, consolidate, or any node.js/Handlebars project.",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "homepage": "https://github.com/jonathas/handlebars-helpers",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "contributors": [
     "Adrián Mugnolo (https://github.com/xymbol)",
     "Aleš Kotnik (www.draagle.com)",
-    "Alex Hunt (https://alexhunt.io)",
     "Ali Sheehan-Dare (https://github.com/alisd23)",
     "Anders D. Johnson (https://andrz.me)",
     "Arthur Cinader (http://github.com/acinader)",
@@ -55,7 +54,7 @@
     "(https://github.com/homersimpsons)",
     "Jonathas Ribeiro (https://github.com/jonathas)"
   ],
-  "repository": "helpers/handlebars-helpers",
+  "repository": "jonathas/handlebars-helpers",
   "bugs": {
     "url": "https://github.com/jonathas/handlebars-helpers/issues"
   },
@@ -86,7 +85,7 @@
     "handlebars-utils": "^1.0.6",
     "has-value": "^1.0.0",
     "helper-date": "^1.0.1",
-    "helper-markdown": "github:jonathas/helper-markdown#1.0.1",
+    "helper-for-markdown": "^1.0.2",
     "helper-md": "^0.2.2",
     "html-tag": "^2.0.0",
     "is-even": "^1.0.0",
