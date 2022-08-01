@@ -65,6 +65,7 @@
     "index.d.ts"
   ],
   "main": "index.js",
+  "types": "index.d.ts",
   "engines": {
     "node": ">=0.12.0"
   },
