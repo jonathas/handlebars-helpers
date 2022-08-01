@@ -61,7 +61,8 @@
   "license": "MIT",
   "files": [
     "index.js",
-    "lib"
+    "lib",
+    "index.d.ts"
   ],
   "main": "index.js",
   "engines": {
