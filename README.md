@@ -1,6 +1,6 @@
 # handlebars-helpers
 
-This is a fork of https://github.com/jonathas/handlebars-helpers with some bugfixes.
+This is a fork of https://github.com/helpers/handlebars-helpers with some bugfixes.
 
 > More than 130 Handlebars helpers in ~20 categories. Helpers can be used with Assemble, Generate, Verb, Ghost, gulp-handlebars, grunt-handlebars, consolidate, or any node.js/Handlebars project.
 
