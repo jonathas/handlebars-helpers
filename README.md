@@ -3083,7 +3083,13 @@ Generate a random number
 
 ## History
 
-## [v0.10.4](https://github.com/jonathas/handlebars-helpers/compare/v0.9.0...v0.10.4) - 2022-08-19
+**changes**
+
+## [v0.10.5](https://github.com/jonathas/handlebars-helpers/compare/v0.10.4...v0.10.5) - 2022-09-18
+
+* package maintenance updates: through2, templates, and template-helpers to latest
+
+## [v0.10.4](https://github.com/jonathas/handlebars-helpers/compare/v0.10.0...v0.10.4) - 2022-08-19
 
 **changes**
 

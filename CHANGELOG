@@ -1,3 +1,7 @@
+v0.10.5:
+  date: "2022-09-18"
+  changes:
+    - package maintenance updates: through2, templates, and template-helpers to latest
 v0.10.4:
   date: "2022-08-19
   changes:
