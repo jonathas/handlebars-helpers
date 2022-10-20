@@ -123,7 +123,7 @@
     "templates": "^1.2.9",
     "through2": "^4.0.2",
     "verb-generate-readme": "^0.8.0",
-    "vinyl": "^2.2.1"
+    "vinyl": "^3.0.0"
   },
   "keywords": [
     "array",
