@@ -78,7 +78,7 @@
     "array-sort": "^1.0.0",
     "create-frame": "^1.0.0",
     "define-property": "^2.0.2",
-    "falsey": "^0.3.2",
+    "falsey": "^1.0.0",
     "for-in": "^1.0.2",
     "for-own": "^1.0.0",
     "get-object": "^0.2.0",
