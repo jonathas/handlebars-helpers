@@ -120,7 +120,7 @@
     "markdown-link": "^0.1.1",
     "mocha": "^10.0.0",
     "template-helpers": "^0.6.7",
-    "templates": "^0.13.7",
+    "templates": "^1.2.9",
     "through2": "^2.0.3",
     "verb-generate-readme": "^0.8.0",
     "vinyl": "^2.2.1"
