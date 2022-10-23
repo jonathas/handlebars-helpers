@@ -3085,6 +3085,10 @@ Generate a random number
 
 **changes**
 
+## [v0.10.6](https://github.com/jonathas/handlebars-helpers/compare/v0.10.5...v0.10.6) - 2022-10-23
+
+* October 2023 package maintenance updates
+
 ## [v0.10.5](https://github.com/jonathas/handlebars-helpers/compare/v0.10.4...v0.10.5) - 2022-09-18
 
 * package maintenance updates: through2, templates, and template-helpers to latest

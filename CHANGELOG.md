@@ -1,3 +1,7 @@
+v0.10.6:
+  date: "2022-10-23"
+  changes:
+    - october 2023 package maintenance updates
 v0.10.5:
   date: "2022-09-18"
   changes:
