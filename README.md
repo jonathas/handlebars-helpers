@@ -3085,6 +3085,10 @@ Generate a random number
 
 **changes**
 
+## [v0.10.7](https://github.com/jonathas/handlebars-helpers/compare/v0.10.6...v0.10.7) - 2022-12-16
+
+* upgrading mocha to 10.2.0
+
 ## [v0.10.6](https://github.com/jonathas/handlebars-helpers/compare/v0.10.5...v0.10.6) - 2022-10-23
 
 * October 2023 package maintenance updates

@@ -1,3 +1,7 @@
+v0.10.7:
+  date: "2022-12-16"
+  changes:
+    - upgrading mocha to 10.2.0
 v0.10.6:
   date: "2022-10-23"
   changes:
