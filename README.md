@@ -1,5 +1,7 @@
 # handlebars-helpers
 
+[![tests](https://github.com/jonathas/handlebars-helpers/actions/workflows/tests.yaml/badge.svg)](https://github.com/jonathas/handlebars-helpers/actions/workflows/tests.yaml)
+
 This is a fork of https://github.com/helpers/handlebars-helpers with some bugfixes.
 
 > More than 130 Handlebars helpers in ~20 categories. Helpers can be used with Assemble, Generate, Verb, Ghost, gulp-handlebars, grunt-handlebars, consolidate, or any node.js/Handlebars project.
