@@ -125,6 +125,7 @@
     "js-yaml": "^4.1.0",
     "markdown-link": "^0.1.1",
     "mocha": "^10.2.0",
+    "release-it": "^15.6.0",
     "template-helpers": "^1.0.1",
     "templates": "^1.2.9",
     "through2": "^4.0.2",
