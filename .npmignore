@@ -1,0 +1,15 @@
+.github
+.husky
+docs
+test
+.editorconfig
+.eslintrc.json
+.gitattributes
+.release-it.js
+.travis.yml
+.verb.md
+appveyor.yml
+bower.json
+CHANGELOG.md
+commitlint.config.js
+gulpfile.js
