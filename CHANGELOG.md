@@ -1,168 +1,594 @@
-v0.10.7:
-  date: "2022-12-16"
-  changes:
-    - upgrading mocha to 10.2.0
-v0.10.6:
-  date: "2022-10-23"
-  changes:
-    - october 2023 package maintenance updates
-v0.10.5:
-  date: "2022-09-18"
-  changes:
-    - package maintenance updates: through2, templates, and template-helpers to latest
-v0.10.4:
-  date: "2022-08-19
-  changes:
-    - including Type Definition for Typescript
-v0.10.0:
-  date: "2017-11-17"
-  changes:
-    - adds `unique` to array helpers
-    - updates `css` helper to ensure that path.join() is not called on an absolute URL.
-v0.9.0:
-  date: "2017-07-03"
-  changes:
-    - all unit tests now use assert instead of should
-    - remove `fileSize` helper in favor of new `bytes` helper, which does the same thing, but returns `B` instead of `byte` or `bytes`.
-    - JSONParse helper is no longer a block helper. It now returns an object, which can be used as a subexpression to achieve the same behavior as before.
-    - adds better error handling for path helpers, since node.js errors are terrible. We have a better way to handle errors that will be implemented in a near future release.
-    - adds inline helper support to `isEmpty`, so it can now be used as an inline or block helper
-    - adds `raw` helper
-    - adds regex helpers
-    - adds inline helper support to most of the comparison helpers, so they can now be used as inline or block helpers
-    - adds `pluck` helper to array helpers
-    - adds `prepend` and `append` helpers to string helpers
-    - adds `isTruthy` and `isFalsey` comparison helpers
-    - adds `escape` and `url_encode` and `url_decode` URL helpers
-    - adds `attr` helper to html helpers
-    - adds `year` helper to date helpers
-    - adds `typeOf` and `frame` helpers to misc helpers
-    - adds `abs`, `minus`, `modulo`, `plus`, `times` to math helpers
-    - moves `ellipsis` helper from `html` helpers to string helpers
-    - moves `truncate` helper from `html` helpers to string helpers
-    - moves `reverse` helper from `string` helpers to array helpers
-    - differentiate `eq` and `is` helpers so that `eq` is strict equality and `is` is not
-    - removes `mm` helper, use `match` instead
-v0.8.4:
-  date: "2017-07-03"
-  changes:
-    - removes strlen helper in favor of fixing the length helper
-v0.8.3:
-  date: "2017-07-03"
-  changes:
-    - adds strlen helper
-    - adds itemAt helper
-    - clean up code comments for array helpers
-v0.8.2:
-  date: "2017-03-30"
-  changes:
-    - documentation updates
-    - fixes md helper to use sync by default
-v0.8.1:
-  date: "2017-03-30"
-  changes:
-    - fixes sorting in withSort helper. see https://github.com/helpers/handlebars-helpers/pull/245
-    - adds toPath helper
-    - handle null inputs in number helpers
-    - adds stripProtocol helper
-v0.8.0:
-  date: "2017-01-25"
-  changes:
-    - handle string arguments in list helpers
-    - adds JSONParse helper as an alias for parseJSON
-v0.7.6:
-  date: "2017-01-08"
-  changes:
-    - fixes markdown helpers. see https://github.com/helpers/handlebars-helpers/pull/226
-    - documentation improvements and other minor fixes
-v0.7.0:
-  date: "2016-07-16"
-  changes:
-    - The [or](#or) helper can now take a variable number of arguments
-v0.6.0:
-  date: "2016-05-13"
-  changes:
-    - the main export is now a function that takes a name or array of names of helper types to load. Example `helpers(['string', 'array'])` will load only the `string` and `array` helpers
-    - helper types can alternatively be accessed as methods. example - `helpers.path()` will return all of the path helpers.
-    - handlebars may be provided by the user. if not provided it will fall back to the `handlebars-helpers`  handlebars
-    - helpers are now as generic as possible, with little to no code related to assemble, grunt, etc.
-    - helpers are lazy-loaded using getters for improved performance
-    - Once tests are added for the `md` and `markdown` helpers, we'll have 100% unit test coverage on helpers
-v0.3.3:
-  date: "2013-09-03"
-  changes:
-    - Adds fileSize helper.
-    - Adds startsWith helper.
-v0.3.2:
-  date: "2013-08-20"
-  changes:
-    - Adds glob helper.
-v0.3.0:
-  date: "2013-07-30"
-  changes:
-    - The project has been refactored, cleaned up, and full documentation has bee put up at http://assemble.io
-v0.2.4:
-  date: "2013-05-11"
-  changes:
-    - Adding object globbing utility functions to be used in helpers later.
-v0.2.3:
-  date: "2013-05-11"
-  changes:
-    - File globbing added to some helpers. Including md and some file helpers.
-v0.2.0:
-  date: "2013-05-07"
-  changes:
-    - A bunch of new tests for markdown and special helpers.
-    - Refactored most of the rest of the helpers to separate functions from Handlebars registration.
-v0.1.32:
-  date: "2013-05-02"
-  changes:
-    - Updates utils and a number of helpers, including value, property, and stringify.
-v0.1.31:
-  date: "2013-04-21"
-  changes:
-    - Fixes relative helper
-v0.1.30:
-  date: "2013-04-20"
-  changes:
-    - Refactoring helpers-collection module to separate the functions from the Handlebars helper registration process.
-v0.1.25:
-  date: "2013-04-16"
-  changes:
-    - Adding defineSection and renderSection helpers to try to get sections populated in a layout from the page.
-v0.1.21:
-  date: "2013-04-07"
-  changes:
-    - Add markdown helpers back, add more tests.
-v0.1.20:
-  date: "2013-04-06"
-  changes:
-    - Generalized helpers structure, externalized utilities.
-v0.1.11:
-  date: "2013-04-05"
-  changes:
-    - New authors and gist helpers, general cleanup and new tests.
-v0.1.10:
-  date: "2013-04-04"
-  changes:
-    - Externalized utility javascript from helpers.js
-v0.1.8:
-  date: "2013-03-28"
-  changes:
-    - "Gruntfile updated with mocha tests for 71 helpers, bug fixes."
-v0.1.7:
-  date: "2013-03-18"
-  changes:
-    - "New path helper 'relative', for resolving relative path from one absolute path to another."
-v0.1.3:
-  date: "2013-03-16"
-  changes:
-    - "New helpers, 'formatPhoneNumber' and 'eachProperty'"
-v0.1.2:
-  date: "2013-03-15"
-  changes:
-    - "Update README.md with documentation, examples."
-v0.1.0:
-  date: "2013-03-06"
-  changes:
-    - "First commit."
+### Changelog
+
+All notable changes to this project will be documented in this file. Dates are displayed in UTC.
+
+Generated by [`auto-changelog`](https://github.com/CookPete/auto-changelog).
+
+#### [0.10.8](https://github.com/jonathas/handlebars-helpers/compare/0.71...0.10.8)
+
+- adding in test status button [`#9`](https://github.com/jonathas/handlebars-helpers/pull/9)
+- adding in github actions for testing [`#8`](https://github.com/jonathas/handlebars-helpers/pull/8)
+
+#### [0.71](https://github.com/jonathas/handlebars-helpers/compare/v0.10.7...0.71)
+
+> 3 July 2017
+
+#### [v0.10.7](https://github.com/jonathas/handlebars-helpers/compare/0.10.6...v0.10.7)
+
+> 16 December 2022
+
+- upgrading mocha to 10.2.0 [`#7`](https://github.com/jonathas/handlebars-helpers/pull/7)
+- chore: release v0.10.7 [`ad8b0c8`](https://github.com/jonathas/handlebars-helpers/commit/ad8b0c89eeb551c1b12e136592b944a9fae4896a)
+
+#### [0.10.6](https://github.com/jonathas/handlebars-helpers/compare/0.10.5...0.10.6)
+
+> 23 October 2022
+
+- October 2023 package maintenance updates [`#6`](https://github.com/jonathas/handlebars-helpers/pull/6)
+- chore: release v0.10.6 [`298104d`](https://github.com/jonathas/handlebars-helpers/commit/298104da5511c378663ca857df7e3d684a92d052)
+
+#### [0.10.5](https://github.com/jonathas/handlebars-helpers/compare/0.10.4...0.10.5)
+
+> 18 September 2022
+
+- Package maintenance updates: through2, templates, and template-helpers to latest [`#4`](https://github.com/jonathas/handlebars-helpers/pull/4)
+- chore: release v0.10.5 [`d3b97ad`](https://github.com/jonathas/handlebars-helpers/commit/d3b97adf2dd66ecf7e9bf0a414b4387635288c1d)
+- docs: fix fork link on README [`b029795`](https://github.com/jonathas/handlebars-helpers/commit/b0297951cab2f27704f5c5a86c14e91429b7d875)
+
+#### [0.10.4](https://github.com/jonathas/handlebars-helpers/compare/0.10.3...0.10.4)
+
+> 19 August 2022
+
+- chore: including Type Definition for Typescript [`#2`](https://github.com/jonathas/handlebars-helpers/pull/2)
+- chore: release v0.10.4 [`bd83ad7`](https://github.com/jonathas/handlebars-helpers/commit/bd83ad74c39b8fd6212a8d0c6beb1cd27930d11f)
+
+#### [0.10.3](https://github.com/jonathas/handlebars-helpers/compare/0.10.2...0.10.3)
+
+> 19 May 2022
+
+- fix: fixed call to helper-for-markdown [`6acb42a`](https://github.com/jonathas/handlebars-helpers/commit/6acb42a62e5c19868cdd9bfb4171cf61f00735a7)
+
+#### [0.10.2](https://github.com/jonathas/handlebars-helpers/compare/0.10.1...0.10.2)
+
+> 19 May 2022
+
+- chore: bump version [`fac1591`](https://github.com/jonathas/handlebars-helpers/commit/fac1591d6cf6761bc533867eb475616f04bbf3a8)
+
+#### [0.10.1](https://github.com/jonathas/handlebars-helpers/compare/0.10.0...0.10.1)
+
+> 19 May 2022
+
+- fix: bumped a few packages [`#1`](https://github.com/jonathas/handlebars-helpers/pull/1)
+- chore: version bump [`7d878e3`](https://github.com/jonathas/handlebars-helpers/commit/7d878e35a3e017414d032b93d37d588a98bac40d)
+
+#### [0.10.0](https://github.com/jonathas/handlebars-helpers/compare/0.9.8...0.10.0)
+
+> 17 November 2017
+
+- Update comments for itemAt helper [`#291`](https://github.com/jonathas/handlebars-helpers/pull/291)
+- fix for passing in an abolute url to css helper [`#293`](https://github.com/jonathas/handlebars-helpers/pull/293)
+- added unique helper [`#297`](https://github.com/jonathas/handlebars-helpers/pull/297)
+- run verb to generate readme documentation [`90724f1`](https://github.com/jonathas/handlebars-helpers/commit/90724f131d3b9f243ff2bdbf750a09cc8bdb6507)
+- run `update` and upgrade deps with `lint-deps` [`3ba7036`](https://github.com/jonathas/handlebars-helpers/commit/3ba70360929dadff3f55c15c78991f647c044dfc)
+- lint, fix code comments [`fe7e666`](https://github.com/jonathas/handlebars-helpers/commit/fe7e6669204e68e452b2ecb6fbe67366748ccf42)
+
+#### [0.9.8](https://github.com/jonathas/handlebars-helpers/compare/0.9.7...0.9.8)
+
+> 31 August 2017
+
+- Math helpers [`#288`](https://github.com/jonathas/handlebars-helpers/pull/288)
+- run verb to generate readme [`7e724f9`](https://github.com/jonathas/handlebars-helpers/commit/7e724f9f1eefd914dc0110730a1375f3917a4d06)
+- fixes comments for various math helpers [`d218c30`](https://github.com/jonathas/handlebars-helpers/commit/d218c30fdcc6e78cd603c2b3b754981985778ea3)
+- fixes wording [`a2e708c`](https://github.com/jonathas/handlebars-helpers/commit/a2e708ccd3c8abfb95232a6b1336ff045d52b649)
+
+#### [0.9.7](https://github.com/jonathas/handlebars-helpers/compare/0.9.6...0.9.7)
+
+> 21 August 2017
+
+- Changed let to var [`#285`](https://github.com/jonathas/handlebars-helpers/pull/285)
+- run verb to generate readme [`896e9dc`](https://github.com/jonathas/handlebars-helpers/commit/896e9dcd51f0480dc1e3df5d75da444bfd354d48)
+- Changed let to var for consistency [`ecaac24`](https://github.com/jonathas/handlebars-helpers/commit/ecaac2431e37a6bf4b92047c387f82dd9cedc64a)
+
+#### [0.9.6](https://github.com/jonathas/handlebars-helpers/compare/0.9.5...0.9.6)
+
+> 28 July 2017
+
+- Add 'falsey' to dependencies and write tests for isTruthy/isFalsey [`#283`](https://github.com/jonathas/handlebars-helpers/pull/283)
+- run verb to generate readme documentation [`00d1c3c`](https://github.com/jonathas/handlebars-helpers/commit/00d1c3c26fa6d9b5fd9bc72cc76adddba53df653)
+- write tests for isTruthy/isFalsey and add link to them in README.md [`31ef162`](https://github.com/jonathas/handlebars-helpers/commit/31ef16236c34e958ebedcc5cbd2a6da0b226a2c8)
+- run update [`b2c7f37`](https://github.com/jonathas/handlebars-helpers/commit/b2c7f378bdd5233484f08bcc28815d116c8e60f4)
+
+#### [0.9.5](https://github.com/jonathas/handlebars-helpers/compare/0.9.4...0.9.5)
+
+> 28 July 2017
+
+- Fix remove and removeFirst helpers. [`#282`](https://github.com/jonathas/handlebars-helpers/pull/282)
+- run update [`553d8a3`](https://github.com/jonathas/handlebars-helpers/commit/553d8a325de16ae60b1056572bf631e8e003b05a)
+
+#### [0.9.4](https://github.com/jonathas/handlebars-helpers/compare/0.9.3...0.9.4)
+
+> 20 July 2017
+
+- fix matching on titleize [`dd2245b`](https://github.com/jonathas/handlebars-helpers/commit/dd2245b7beb1f6e6f7b569538f8ef549b4387d06)
+- run verb to generate readme documentation [`d78b9ab`](https://github.com/jonathas/handlebars-helpers/commit/d78b9ab4f1119027fcc8b0b5b6eba56e39ade1fc)
+
+#### [0.9.3](https://github.com/jonathas/handlebars-helpers/compare/0.9.2...0.9.3)
+
+> 10 July 2017
+
+- reverse arguments [`#279`](https://github.com/jonathas/handlebars-helpers/issues/279)
+- run verb to generate readme [`b24ccba`](https://github.com/jonathas/handlebars-helpers/commit/b24ccbaa478d3d4cbafbad49a9a06856a5ce209f)
+- increase code coverage [`9bd9916`](https://github.com/jonathas/handlebars-helpers/commit/9bd9916f273a0b0579822634ad2e64d7ff28af33)
+
+#### [0.9.2](https://github.com/jonathas/handlebars-helpers/compare/0.9.1...0.9.2)
+
+> 5 July 2017
+
+- fix failing tests on windows [`561df24`](https://github.com/jonathas/handlebars-helpers/commit/561df240940101985c94100c5c1281c172549a6e)
+- lint [`63140e0`](https://github.com/jonathas/handlebars-helpers/commit/63140e0095d42c7a9e11bf9d70f49dc7b6c5bb92)
+- run eslint task first, fail on eslint error [`96af656`](https://github.com/jonathas/handlebars-helpers/commit/96af65696e31b125fbe3180d6dc380fa8ca4f6eb)
+
+#### [0.9.1](https://github.com/jonathas/handlebars-helpers/compare/0.9.0...0.9.1)
+
+> 4 July 2017
+
+- Add a `remainder` helper [`#278`](https://github.com/jonathas/handlebars-helpers/pull/278)
+- run verb to generate readme [`b67007d`](https://github.com/jonathas/handlebars-helpers/commit/b67007dfb761dad3c1858d3ba17a3e797398f766)
+- run update, fix node engines [`6d7c8bd`](https://github.com/jonathas/handlebars-helpers/commit/6d7c8bd44deb79bddf2996327fba901774e35140)
+
+#### [0.9.0](https://github.com/jonathas/handlebars-helpers/compare/0.8.4...0.9.0)
+
+> 4 July 2017
+
+- Make helpers more consistent with empty strings [`#274`](https://github.com/jonathas/handlebars-helpers/pull/274)
+- 0.9.0 - see changelog [`5fb6c50`](https://github.com/jonathas/handlebars-helpers/commit/5fb6c50544e2b6f537c560f8d03940e0e6407a22)
+- use handlebars-utils, lint [`ec2187f`](https://github.com/jonathas/handlebars-helpers/commit/ec2187fdd30a71ada7ea7faf857cb5f96122b4d1)
+- run verb to generate readme [`a7ad907`](https://github.com/jonathas/handlebars-helpers/commit/a7ad907384bfac100219e9493c48f1bcb75266cc)
+
+#### [0.8.4](https://github.com/jonathas/handlebars-helpers/compare/0.8.3...0.8.4)
+
+> 3 July 2017
+
+- run verb to generate readme [`2c99b75`](https://github.com/jonathas/handlebars-helpers/commit/2c99b7543b75883bf1b876056fb65dca4b82cf16)
+- remove strlen in favor of fixing length [`381ac2a`](https://github.com/jonathas/handlebars-helpers/commit/381ac2abd3ce103591473589286c01bd3791e4c0)
+
+#### [0.8.3](https://github.com/jonathas/handlebars-helpers/compare/0.8.2...0.8.3)
+
+> 3 July 2017
+
+- add `.itemAt` array helper. [`#266`](https://github.com/jonathas/handlebars-helpers/pull/266)
+- added groupedEach helper and test [`#249`](https://github.com/jonathas/handlebars-helpers/pull/249)
+- Update README Examples [`#275`](https://github.com/jonathas/handlebars-helpers/pull/275)
+- update {{subtract}} documentation [`#267`](https://github.com/jonathas/handlebars-helpers/pull/267)
+- Bugfix occurrences [`#268`](https://github.com/jonathas/handlebars-helpers/pull/268)
+- add strlen [`#271`](https://github.com/jonathas/handlebars-helpers/issues/271)
+- run verb to generate readme [`9a70c0b`](https://github.com/jonathas/handlebars-helpers/commit/9a70c0be1e83c619bf0143eeda8c52eb2bf60d55)
+- clean up array files [`b9d2a27`](https://github.com/jonathas/handlebars-helpers/commit/b9d2a273952cb47a1d3228845b4b839c9a1566ba)
+- remove unnecessary files [`fd4eadf`](https://github.com/jonathas/handlebars-helpers/commit/fd4eadf874eefc7cabd85180ffc54652e3c8213e)
+
+#### [0.8.2](https://github.com/jonathas/handlebars-helpers/compare/0.8.1...0.8.2)
+
+> 31 March 2017
+
+- clarify documentation for {{length}} helper. closes #221 [`#221`](https://github.com/jonathas/handlebars-helpers/issues/221)
+- fix typo in example. closes #220 [`#220`](https://github.com/jonathas/handlebars-helpers/issues/220)
+- generate readme documentation with verb [`8b1d077`](https://github.com/jonathas/handlebars-helpers/commit/8b1d0776fe31083639ada40131c328f1c107d456)
+- add markdown tests [`86fba0b`](https://github.com/jonathas/handlebars-helpers/commit/86fba0b6ff37910fe56871b53f7067cc4f9f917d)
+- update CHANGELOG [`fbb79da`](https://github.com/jonathas/handlebars-helpers/commit/fbb79da39ff88c9a993e634ff05f9ace1052f4c6)
+
+#### [0.8.1](https://github.com/jonathas/handlebars-helpers/compare/0.8.0...0.8.1)
+
+> 30 March 2017
+
+- 0.8.1 [`#254`](https://github.com/jonathas/handlebars-helpers/pull/254)
+- Add a strip protocol helper to the url suite. [`#251`](https://github.com/jonathas/handlebars-helpers/pull/251)
+- number helpers do not crash on null inputs [`#253`](https://github.com/jonathas/handlebars-helpers/pull/253)
+- Add support for `toPath` [`#240`](https://github.com/jonathas/handlebars-helpers/pull/240)
+- Fix of the compare function [`#245`](https://github.com/jonathas/handlebars-helpers/pull/245)
+- run update [`68bf1f7`](https://github.com/jonathas/handlebars-helpers/commit/68bf1f722b8fccbf867c5cc0ca4c6e914c77d31c)
+- Updated README with verb [`c681eea`](https://github.com/jonathas/handlebars-helpers/commit/c681eeaffd4ace9b2561a7cccf6058a9e8916602)
+- run update [`a85ac90`](https://github.com/jonathas/handlebars-helpers/commit/a85ac9056b1c94409b23344e69d933df5773c9a5)
+
+#### [0.8.0](https://github.com/jonathas/handlebars-helpers/compare/0.7.7...0.8.0)
+
+> 25 January 2017
+
+- generate docs [`c4ad00d`](https://github.com/jonathas/handlebars-helpers/commit/c4ad00df96a580cc8b92696fed0087edcb089344)
+- add `JSONparse` alias [`f01d96d`](https://github.com/jonathas/handlebars-helpers/commit/f01d96d56fa723a4e2f048f9791a6150e05ab0fc)
+- handle string arguments in list helpers [`cabbcba`](https://github.com/jonathas/handlebars-helpers/commit/cabbcbad7cf5d1f9458db4cf24a814716b000096)
+
+#### [0.7.7](https://github.com/jonathas/handlebars-helpers/compare/0.7.6...0.7.7)
+
+> 8 January 2017
+
+- Update behaviour of {{ifNth}} helper to directly use value given, resolves #228 [`#229`](https://github.com/jonathas/handlebars-helpers/pull/229)
+- Merge pull request #229 from huntie/master [`#228`](https://github.com/jonathas/handlebars-helpers/issues/228)
+- add release history to docs [`8fcdfe3`](https://github.com/jonathas/handlebars-helpers/commit/8fcdfe372fa689c6d2c834c617a986e6042ec212)
+- use merge, minor optimizations [`adc061d`](https://github.com/jonathas/handlebars-helpers/commit/adc061d140177d38dcbdb28a9aaa2d7defced951)
+- minor edits [`1b913c0`](https://github.com/jonathas/handlebars-helpers/commit/1b913c0046de92b7ba055d3f975cb710e2e77e85)
+
+#### [0.7.6](https://github.com/jonathas/handlebars-helpers/compare/0.7.5...0.7.6)
+
+> 8 January 2017
+
+- Fix markdown by making properties enumerable [`#226`](https://github.com/jonathas/handlebars-helpers/pull/226)
+- Add quotations to the id of the gist helper [`#239`](https://github.com/jonathas/handlebars-helpers/pull/239)
+- Changed the toPrecision in code docs to include precision parameter [`#232`](https://github.com/jonathas/handlebars-helpers/pull/232)
+- Fix markdown by making properties enumerable [`#222`](https://github.com/jonathas/handlebars-helpers/issues/222)
+- run update [`892b6d5`](https://github.com/jonathas/handlebars-helpers/commit/892b6d503d42a1ba125e9b8f13a4c8bca9e52436)
+- update deps [`1d9852b`](https://github.com/jonathas/handlebars-helpers/commit/1d9852b3fbfdee7305c110eb1b6704f0e6bd372c)
+- generate docs [`7ef7fa1`](https://github.com/jonathas/handlebars-helpers/commit/7ef7fa18d355b72d250a588852ab462fc4f9f15b)
+
+#### [0.7.5](https://github.com/jonathas/handlebars-helpers/compare/0.7.4...0.7.5)
+
+> 17 August 2016
+
+- adds `path.stem` and `path.absolute` methods [`a89c208`](https://github.com/jonathas/handlebars-helpers/commit/a89c20811c2ea763a3832a258ecf3ad1af33664d)
+- generate docs [`56f172d`](https://github.com/jonathas/handlebars-helpers/commit/56f172dc9051fbefa17fdecd99030626d393eed4)
+- adds integration tests [`c99e30b`](https://github.com/jonathas/handlebars-helpers/commit/c99e30baf4c12af378013a3722ebaa120ec6df06)
+
+#### [0.7.4](https://github.com/jonathas/handlebars-helpers/compare/0.7.3...0.7.4)
+
+> 17 August 2016
+
+- Fix inconsistency in config key names for custom handlebars instances [`#223`](https://github.com/jonathas/handlebars-helpers/pull/223)
+- update toc logic [`630b9b9`](https://github.com/jonathas/handlebars-helpers/commit/630b9b958a387bf7204e961dc358691f590ac50c)
+- generate docs [`7cd836c`](https://github.com/jonathas/handlebars-helpers/commit/7cd836c92ae6f3d93a622d28605318fe2bfd19c7)
+- clean up deps [`34e4370`](https://github.com/jonathas/handlebars-helpers/commit/34e43704ab6cfb3450aac1d0f4668d2a1e7f9190)
+
+#### [0.7.3](https://github.com/jonathas/handlebars-helpers/compare/0.7.2...0.7.3)
+
+> 3 July 2017
+
+- update {{or}} documentation [`ee016d8`](https://github.com/jonathas/handlebars-helpers/commit/ee016d8f3e17307755292056dedce55a3433d33e)
+
+#### [0.7.2](https://github.com/jonathas/handlebars-helpers/compare/0.7.1...0.7.2)
+
+> 3 July 2017
+
+- add example to {{or}} helper [`1ee4a57`](https://github.com/jonathas/handlebars-helpers/commit/1ee4a57ca7acd3d9b8de25c7a0e2a44ac7dac991)
+- 0.71 [`2630917`](https://github.com/jonathas/handlebars-helpers/commit/2630917f35662a820a78e4a885b5fc9104c1e88c)
+
+#### [0.7.1](https://github.com/jonathas/handlebars-helpers/compare/0.7.0...0.7.1)
+
+> 15 July 2016
+
+- Generate new README.md [`a882615`](https://github.com/jonathas/handlebars-helpers/commit/a8826159335f28315967461d447880056042a4c5)
+- Update dependencies [`c4e2fed`](https://github.com/jonathas/handlebars-helpers/commit/c4e2fed0ada8e4d3a7059bebc37dccd51be6aa62)
+
+#### [0.7.0](https://github.com/jonathas/handlebars-helpers/compare/0.6.2...0.7.0)
+
+> 15 July 2016
+
+- Allow {{#or}} to accept variable arguments [`#219`](https://github.com/jonathas/handlebars-helpers/pull/219)
+
+#### [0.6.2](https://github.com/jonathas/handlebars-helpers/compare/0.6.1...0.6.2)
+
+> 7 July 2016
+
+- fix typo [`#216`](https://github.com/jonathas/handlebars-helpers/pull/216)
+- generate readme [`a26cc60`](https://github.com/jonathas/handlebars-helpers/commit/a26cc607752f026d329285409d57d020c906f2fa)
+- update deps, description [`27647c5`](https://github.com/jonathas/handlebars-helpers/commit/27647c53cd06bac9bfbdf178ff65878ad52482b5)
+- add handlebars-helpers-browserify-example to readme [`e7d3a33`](https://github.com/jonathas/handlebars-helpers/commit/e7d3a33aae7e775cf25063f088217af8bf83e481)
+
+#### [0.6.1](https://github.com/jonathas/handlebars-helpers/compare/0.6.0...0.6.1)
+
+> 18 May 2016
+
+- remove export-files [`#214`](https://github.com/jonathas/handlebars-helpers/issues/214)
+- move authors data into verbfile [`6be5315`](https://github.com/jonathas/handlebars-helpers/commit/6be5315cfdb93e21b92a4e620a615ae3ce97167a)
+
+#### [0.6.0](https://github.com/jonathas/handlebars-helpers/compare/0.5.8...0.6.0)
+
+> 13 May 2016
+
+- Add thumbnailImage Helper [`#144`](https://github.com/jonathas/handlebars-helpers/pull/144)
+- {{ifAny}} was broken.  [`#162`](https://github.com/jonathas/handlebars-helpers/pull/162)
+- Default options object in helpers-markdown. [`#175`](https://github.com/jonathas/handlebars-helpers/pull/175)
+- Get the sum to attempt to parse before it gives up [`#171`](https://github.com/jonathas/handlebars-helpers/pull/171)
+- Fixed utils typo [`#168`](https://github.com/jonathas/handlebars-helpers/pull/168)
+- Add ifEven helper [`#150`](https://github.com/jonathas/handlebars-helpers/pull/150)
+- Fixed 2 typos in the comparison helpers error messages [`#153`](https://github.com/jonathas/handlebars-helpers/pull/153)
+- add sum helper [`#131`](https://github.com/jonathas/handlebars-helpers/pull/131)
+- Merge remote-tracking branch 'upstream/master' [`#145`](https://github.com/jonathas/handlebars-helpers/issues/145)
+- flushing out branch [`2919639`](https://github.com/jonathas/handlebars-helpers/commit/291963933dbc4cce8c12352b404a4f9439579d33)
+- removing all the microlib stuff and just building with concat [`2729199`](https://github.com/jonathas/handlebars-helpers/commit/27291991c25adb30cb4eafa0e8fbab35576c3158)
+- refactoring again and adding some es6 transpiling. more work is needed to convert some modules to es6 and to make sure everything is registered properly for the browser [`4d1340e`](https://github.com/jonathas/handlebars-helpers/commit/4d1340e3829f42ea99d70ddbc63f57593f06de0c)
+
+#### [0.5.8](https://github.com/jonathas/handlebars-helpers/compare/v0.5.8...0.5.8)
+
+> 20 August 2014
+
+#### [v0.5.8](https://github.com/jonathas/handlebars-helpers/compare/0.5.7...v0.5.8)
+
+> 20 August 2014
+
+- Missing `typeof` [`2f100b2`](https://github.com/jonathas/handlebars-helpers/commit/2f100b2d43d2f0e43007d31c4d5621ba8ee25afa)
+
+#### [0.5.7](https://github.com/jonathas/handlebars-helpers/compare/v0.5.7...0.5.7)
+
+> 30 July 2014
+
+#### [v0.5.7](https://github.com/jonathas/handlebars-helpers/compare/0.5.6...v0.5.7)
+
+> 30 July 2014
+
+- bumping node version [`81a8e81`](https://github.com/jonathas/handlebars-helpers/commit/81a8e817a13c8fa0336ec7c65c1329254edbc547)
+
+#### [0.5.6](https://github.com/jonathas/handlebars-helpers/compare/v0.5.6...0.5.6)
+
+> 3 July 2017
+
+#### [v0.5.6](https://github.com/jonathas/handlebars-helpers/compare/v0.5.5...v0.5.6)
+
+> 30 July 2014
+
+- Allow passing object to stringify, resolves #145 [`#146`](https://github.com/jonathas/handlebars-helpers/pull/146)
+- remove readme task [`#141`](https://github.com/jonathas/handlebars-helpers/pull/141)
+- Convert docs to use verb [`#135`](https://github.com/jonathas/handlebars-helpers/pull/135)
+- @trivial fixed link in README [`#133`](https://github.com/jonathas/handlebars-helpers/pull/133)
+- Merge pull request #146 from backflip/master [`#145`](https://github.com/jonathas/handlebars-helpers/issues/145)
+- Allow passing object to stringify, resolves #145 [`#145`](https://github.com/jonathas/handlebars-helpers/issues/145)
+- get verb working [`d5c4c1a`](https://github.com/jonathas/handlebars-helpers/commit/d5c4c1ac0e48720f2643ffb0bb5b685de9a81a36)
+- convert tmpl.md to .verbrc [`b0435b5`](https://github.com/jonathas/handlebars-helpers/commit/b0435b5c62a976bd4036459e809f353f79a8f3cb)
+- Add test for passing an object to stringify [`bfc5d22`](https://github.com/jonathas/handlebars-helpers/commit/bfc5d225a6b03ae0708b97494291e64968c54e19)
+
+#### [v0.5.5](https://github.com/jonathas/handlebars-helpers/compare/v0.5.4...v0.5.5)
+
+> 24 March 2014
+
+- Update helpers-strings.js with plusify function [`#126`](https://github.com/jonathas/handlebars-helpers/pull/126)
+- Modified strings_test.js with plusify tests [`b8d6801`](https://github.com/jonathas/handlebars-helpers/commit/b8d6801a05db207a20a71147ac2e0e4c9bac495b)
+- bumping version [`fcb2601`](https://github.com/jonathas/handlebars-helpers/commit/fcb26015cfaf576811f62376dc57996eb73b374b)
+- Modified docs to include plusify function [`f3451d1`](https://github.com/jonathas/handlebars-helpers/commit/f3451d15729964f400ba3a436e25c3939636cbb9)
+
+#### [v0.5.4](https://github.com/jonathas/handlebars-helpers/compare/v0.5.3...v0.5.4)
+
+> 12 March 2014
+
+- updating length helper to make sure there's an object [`bf98ee5`](https://github.com/jonathas/handlebars-helpers/commit/bf98ee5d25b914eff3d841f777c2c0ad35075b3b)
+- update versions in bower/package.json [`bb90652`](https://github.com/jonathas/handlebars-helpers/commit/bb906529da141ce1621c02e39b852a612215e7d6)
+- bumping version [`3e4fd62`](https://github.com/jonathas/handlebars-helpers/commit/3e4fd62a62741aee246a514b2f30aeff353bf131)
+
+#### [v0.5.3](https://github.com/jonathas/handlebars-helpers/compare/0.5.2...v0.5.3)
+
+> 3 July 2017
+
+- withHash helper to create a new context from the attribute hash [`#117`](https://github.com/jonathas/handlebars-helpers/pull/117)
+- Fix link [`#114`](https://github.com/jonathas/handlebars-helpers/pull/114)
+- withHash helper and tests [`2d68352`](https://github.com/jonathas/handlebars-helpers/commit/2d68352311a1d52c46cdc145f46606b993b7ed8c)
+- withHash helper documentation [`a86ca1f`](https://github.com/jonathas/handlebars-helpers/commit/a86ca1f40179047ec2a4937bfd68c3d2b138781b)
+
+#### [0.5.2](https://github.com/jonathas/handlebars-helpers/compare/v0.5.2...0.5.2)
+
+> 3 July 2017
+
+#### [v0.5.2](https://github.com/jonathas/handlebars-helpers/compare/v0.5.1...v0.5.2)
+
+> 2 February 2014
+
+- two more tests for good measure [`#109`](https://github.com/jonathas/handlebars-helpers/pull/109)
+- Adds New Tests [`#107`](https://github.com/jonathas/handlebars-helpers/pull/107)
+- helpers: comparison: add `ifNth` helper [`#108`](https://github.com/jonathas/handlebars-helpers/pull/108)
+- adds many tests, updates the readme and docs [`3833650`](https://github.com/jonathas/handlebars-helpers/commit/383365032d903bb1eb1837177bdc59528e69cf76)
+- adds two more tests, update docs [`43e45af`](https://github.com/jonathas/handlebars-helpers/commit/43e45af7c7f97b21af164166b3b96391db282205)
+- updates bower.json, minor formatting [`004b275`](https://github.com/jonathas/handlebars-helpers/commit/004b275d885929e88584b4b388ec6fdc2af11ca3)
+
+#### [v0.5.1](https://github.com/jonathas/handlebars-helpers/compare/v0.5.0...v0.5.1)
+
+> 17 January 2014
+
+- fixes dependency version [`5d216f9`](https://github.com/jonathas/handlebars-helpers/commit/5d216f952a47f311a670887c1d4c06f841c25821)
+
+#### [v0.5.0](https://github.com/jonathas/handlebars-helpers/compare/0.4.4...v0.5.0)
+
+> 17 January 2014
+
+- Layout helper improvements & documentation [`#106`](https://github.com/jonathas/handlebars-helpers/pull/106)
+- bump to v0.5.0. Breaking changes! Handlebars version was bumped to latest, v1.3.0 and jsfiddle helper now relies on hash arguments. [`b70bb15`](https://github.com/jonathas/handlebars-helpers/commit/b70bb151f6bd23b0f423d3709b9bc0e34115f836)
+- improves logic for automatically registering helpers from node_modules [`0cc1244`](https://github.com/jonathas/handlebars-helpers/commit/0cc12441993bea904359e0cd188418a189e389b0)
+
+#### [0.4.4](https://github.com/jonathas/handlebars-helpers/compare/0.4.2...0.4.4)
+
+> 3 July 2017
+
+- Fix nap test [`#105`](https://github.com/jonathas/handlebars-helpers/pull/105)
+- move URL helpers into register function, delete some unused utils from html.js [`5a1fbeb`](https://github.com/jonathas/handlebars-helpers/commit/5a1fbebd2223211d34ac48699d14e5cf636a71de)
+- updates to some helpers [`ef51484`](https://github.com/jonathas/handlebars-helpers/commit/ef5148456e490e0d1f0f452dc5a72f23d4bb72fa)
+- adds "params" to helper-lib.js register function, other minor edits [`9c5f0df`](https://github.com/jonathas/handlebars-helpers/commit/9c5f0dfd1d140987b2826a2ceedfb755b98791f9)
+
+#### [0.4.2](https://github.com/jonathas/handlebars-helpers/compare/v0.4.2...0.4.2)
+
+> 3 July 2017
+
+#### [v0.4.2](https://github.com/jonathas/handlebars-helpers/compare/0.4.1...v0.4.2)
+
+> 3 December 2013
+
+- New helpers for nap. [`#101`](https://github.com/jonathas/handlebars-helpers/pull/101)
+
+#### [0.4.1](https://github.com/jonathas/handlebars-helpers/compare/0.3.17...0.4.1)
+
+> 3 July 2017
+
+- chore (upgrading handlebars): upgrading to handlebars v1.1.2 [`#100`](https://github.com/jonathas/handlebars-helpers/pull/100)
+- bumped to 0.4.0 [`#97`](https://github.com/jonathas/handlebars-helpers/pull/97)
+- adds test coverage for embed helper, specifically for embedding markdown... [`#96`](https://github.com/jonathas/handlebars-helpers/pull/96)
+- adds tests for `embed` and `formatPhoneNubmer` helpers [`#95`](https://github.com/jonathas/handlebars-helpers/pull/95)
+- housekeeping, cleans up deps, fixes some tests [`#93`](https://github.com/jonathas/handlebars-helpers/pull/93)
+- fix(typo): Utils.SafeString should be Utils.safeString [`#90`](https://github.com/jonathas/handlebars-helpers/pull/90)
+- adds compress task and helper docs [`#87`](https://github.com/jonathas/handlebars-helpers/pull/87)
+- rebuilds readme to correct the helpers listed [`#86`](https://github.com/jonathas/handlebars-helpers/pull/86)
+- updates coverage task so the total number of helpers can be displayed on the README [`61dccab`](https://github.com/jonathas/handlebars-helpers/commit/61dccab680ff81e0375c829db5933ca7519f6bf9)
+- helpers: path [`5ee637b`](https://github.com/jonathas/handlebars-helpers/commit/5ee637b7ac8c0d9a3715eda4e402b7d1cc83ea0f)
+- adds test coverage for embed helper, specifically for embedding markdown that has code examples embedded within. [`d1294c6`](https://github.com/jonathas/handlebars-helpers/commit/d1294c6d96ad1eee50f26ca652f402c49ed1577e)
+
+#### [0.3.17](https://github.com/jonathas/handlebars-helpers/compare/0.3.16...0.3.17)
+
+> 3 July 2017
+
+- Bumping and updating README.md [`#85`](https://github.com/jonathas/handlebars-helpers/pull/85)
+- adds compress task and helper docs [`b1c98ba`](https://github.com/jonathas/handlebars-helpers/commit/b1c98bad6feedb0cb6fde9770a69408d939eab7e)
+- adds utils tests. [`5e50a74`](https://github.com/jonathas/handlebars-helpers/commit/5e50a74a49312185a3ff430f1c5b7bc8fa9d2d26)
+- updating README.md [`fc9401e`](https://github.com/jonathas/handlebars-helpers/commit/fc9401e254b86abf5df1dcbe51276c9514ec7bdd)
+
+#### [0.3.16](https://github.com/jonathas/handlebars-helpers/compare/0.3.15...0.3.16)
+
+> 3 July 2017
+
+- Adding 'filter' helper for collections [`#84`](https://github.com/jonathas/handlebars-helpers/pull/84)
+- 0.3.15 [`#83`](https://github.com/jonathas/handlebars-helpers/pull/83)
+
+#### [0.3.15](https://github.com/jonathas/handlebars-helpers/compare/0.3.14...0.3.15)
+
+> 3 July 2017
+
+- fix undefined properties in assemble tests [`#82`](https://github.com/jonathas/handlebars-helpers/pull/82)
+- un-breaks assemble [`#81`](https://github.com/jonathas/handlebars-helpers/pull/81)
+- adds sort-object back in. "coverage" task now generates a list of total helpers [`c2aedc9`](https://github.com/jonathas/handlebars-helpers/commit/c2aedc93aa882f3999f790f2f3b955b21b0903a2)
+- options is already defined [`fe2af79`](https://github.com/jonathas/handlebars-helpers/commit/fe2af79c3693b1de8c6c5f0463719927ceb1bd88)
+
+#### [0.3.14](https://github.com/jonathas/handlebars-helpers/compare/0.3.13...0.3.14)
+
+> 3 July 2017
+
+- 0.3.13 [`#80`](https://github.com/jonathas/handlebars-helpers/pull/80)
+- removes sort-object since it was breaking the build. remove bower.json since the dependencies aren't all registered with bower. rebuild readme [`8619cb3`](https://github.com/jonathas/handlebars-helpers/commit/8619cb38a3018fe3350ce25dbc0b436551eeddd9)
+- make uppercase helper should work as an expression or block expression [`b5488af`](https://github.com/jonathas/handlebars-helpers/commit/b5488afd6f146d27113440e7b905e245d5bc32e2)
+
+#### [0.3.13](https://github.com/jonathas/handlebars-helpers/compare/0.3.12...0.3.13)
+
+> 3 July 2017
+
+- Pulling in Jon's changes [`#79`](https://github.com/jonathas/handlebars-helpers/pull/79)
+- add `dir` "desc" option hash to `withSort` helper [`#78`](https://github.com/jonathas/handlebars-helpers/pull/78)
+- layout helpers [`#75`](https://github.com/jonathas/handlebars-helpers/pull/75)
+- adds test coverage for ellipsis, merges in readme updates [`#77`](https://github.com/jonathas/handlebars-helpers/pull/77)
+- Updating layout helpers [`53f4e3e`](https://github.com/jonathas/handlebars-helpers/commit/53f4e3e34b4683df35a73016554952ae4f18ea9a)
+
+#### [0.3.12](https://github.com/jonathas/handlebars-helpers/compare/0.3.11...0.3.12)
+
+> 3 July 2017
+
+- updates "inspect" helper to use JSON.stringify and sort-ojbect instead of util.inspect. [`b85e554`](https://github.com/jonathas/handlebars-helpers/commit/b85e554f24139cbc6d396b7dc96cc6fded1856f6)
+
+#### [0.3.11](https://github.com/jonathas/handlebars-helpers/compare/0.3.10...0.3.11)
+
+> 3 July 2017
+
+- cleans up readme [`#76`](https://github.com/jonathas/handlebars-helpers/pull/76)
+- adds conditional statements to string helpers [`4fb07ce`](https://github.com/jonathas/handlebars-helpers/commit/4fb07cec7c325276ef5f60268e0084db998f1e8a)
+- rebuilds readme [`1394e72`](https://github.com/jonathas/handlebars-helpers/commit/1394e72fdcc1e496b3e2cc7b54614635f82a0266)
+- adds tests for ellipsis helper, moves formatPhoneNumber helper to numbers [`3d2f336`](https://github.com/jonathas/handlebars-helpers/commit/3d2f3366870a1090463d5fc6eeb732d869c161f4)
+
+#### [0.3.10](https://github.com/jonathas/handlebars-helpers/compare/0.3.9...0.3.10)
+
+> 3 July 2017
+
+- fixes many inconsistencies, tests [`9b3f120`](https://github.com/jonathas/handlebars-helpers/commit/9b3f1200e9172d80dfbf98105dbf704a58b3c46e)
+- adds "delta" task for generating a list of helpers that are undocumented or lacking tests. [`8e1d87e`](https://github.com/jonathas/handlebars-helpers/commit/8e1d87e8a70a3bd1107258c928cc817eb9e9dd25)
+
+#### [0.3.9](https://github.com/jonathas/handlebars-helpers/compare/0.3.8...0.3.9)
+
+> 3 July 2017
+
+- fixes matchkeys bs [`c830820`](https://github.com/jonathas/handlebars-helpers/commit/c830820613497894d1d1ac18752104e8b77c4ed5)
+- corrects dependency [`c375543`](https://github.com/jonathas/handlebars-helpers/commit/c375543e251f70e2093a3b1542336d8937606839)
+
+#### [0.3.8](https://github.com/jonathas/handlebars-helpers/compare/0.3.7...0.3.8)
+
+> 3 July 2017
+
+- Adding the correct dependencies to the correct places and bumping version [`#74`](https://github.com/jonathas/handlebars-helpers/pull/74)
+- Loading helpers from modules in dependencies [`#73`](https://github.com/jonathas/handlebars-helpers/pull/73)
+- cleans up utils that were converted from coffeescript [`9fa44bb`](https://github.com/jonathas/handlebars-helpers/commit/9fa44bbe8ea363c578edbc604dfe26656c4c081c)
+- bumping version [`0ff70a8`](https://github.com/jonathas/handlebars-helpers/commit/0ff70a86c9dd07e94d1177f305f22a96eeaf9e17)
+
+#### [0.3.7](https://github.com/jonathas/handlebars-helpers/compare/0.3.6...0.3.7)
+
+> 3 July 2017
+
+- deep clone array inside withSort helper, in case the origin data is affected [`#70`](https://github.com/jonathas/handlebars-helpers/pull/70)
+- Added basic documentation for the i18n helper [`#65`](https://github.com/jonathas/handlebars-helpers/pull/65)
+- adds {{each}} helper. needs tests [`cd3c24c`](https://github.com/jonathas/handlebars-helpers/commit/cd3c24ce937481517254d78d09c18ae75d9654fa)
+- rename docs [`bb2280b`](https://github.com/jonathas/handlebars-helpers/commit/bb2280bd2d0310f51aeeb2b80a8fe73818a28db2)
+- improvements to readme templates [`c2d31ae`](https://github.com/jonathas/handlebars-helpers/commit/c2d31ae3fe1504d51e8c4102bfef8f825a4aede3)
+
+#### [0.3.6](https://github.com/jonathas/handlebars-helpers/compare/0.3.4...0.3.6)
+
+> 3 July 2017
+
+- fix for random number helper [`#61`](https://github.com/jonathas/handlebars-helpers/pull/61)
+- Added a helper to generate a random number [`#60`](https://github.com/jonathas/handlebars-helpers/pull/60)
+- Fixed a coffee syntax for the i18n helper (register not returning this) [`#59`](https://github.com/jonathas/handlebars-helpers/pull/59)
+- first step in cleaning up and refactoring helpers [`03fc0c6`](https://github.com/jonathas/handlebars-helpers/commit/03fc0c6afd8d57d25b6fb62936ea4ef7d8512377)
+- coffee = gone. [`5a2b560`](https://github.com/jonathas/handlebars-helpers/commit/5a2b560a00ec3dcea9a5f0863ab7f7c779d86158)
+- clean up vars and code comments [`f059a80`](https://github.com/jonathas/handlebars-helpers/commit/f059a803f1cd8586b2f59b9c5ac7d1fd0a907959)
+
+#### [0.3.4](https://github.com/jonathas/handlebars-helpers/compare/0.3.3...0.3.4)
+
+> 3 July 2017
+
+- Added an i18n helper and basic unit test [`#57`](https://github.com/jonathas/handlebars-helpers/pull/57)
+- rebuild with fileSize and startsWith helpers [`a98c0c8`](https://github.com/jonathas/handlebars-helpers/commit/a98c0c8626e3e6a48400fc6d10a146d4fcfa8b70)
+- fixes i18n tests [`23a273d`](https://github.com/jonathas/handlebars-helpers/commit/23a273d0455c41a982b7a38d8cedcf80d0b0801f)
+- bumping bower version and updating readme [`bbc6694`](https://github.com/jonathas/handlebars-helpers/commit/bbc66943467913145e9bc0809cb6130400c78fab)
+
+#### [0.3.3](https://github.com/jonathas/handlebars-helpers/compare/0.3.2...0.3.3)
+
+> 3 July 2017
+
+- startsWith helper and tests [`#54`](https://github.com/jonathas/handlebars-helpers/pull/54)
+- Added fileSize helper and tests [`#53`](https://github.com/jonathas/handlebars-helpers/pull/53)
+- Update docs location [`#49`](https://github.com/jonathas/handlebars-helpers/pull/49)
+- updating change log [`5ea9bba`](https://github.com/jonathas/handlebars-helpers/commit/5ea9bbadf5b5649ae894769086eed893d3c02d81)
+- Switched Handlebars.SafeString to Utils.safeString [`ed739d4`](https://github.com/jonathas/handlebars-helpers/commit/ed739d4efb6fb92d08d8d745de662e8bdf885220)
+- Actually registered the helper this time... [`2a790d4`](https://github.com/jonathas/handlebars-helpers/commit/2a790d4b0f81554a00fc13da5a128648fdd856c4)
+
+#### [0.3.2](https://github.com/jonathas/handlebars-helpers/compare/0.3.1...0.3.2)
+
+> 3 July 2017
+
+- re-add glob helper [`65e599a`](https://github.com/jonathas/handlebars-helpers/commit/65e599a5a1438578a8c00bcdd19dcbf63b4bfb5d)
+
+#### [0.3.1](https://github.com/jonathas/handlebars-helpers/compare/0.2.9...0.3.1)
+
+> 3 July 2017
+
+- Adds eachIndexPlusOne and a test [`#45`](https://github.com/jonathas/handlebars-helpers/pull/45)
+- closes https://github.com/assemble/handlebars-helpers/pull/29, thanks @Arkkimaagi! [`#29`](https://github.com/assemble/handlebars-helpers/pull/29)
+- remove old docs [`e275ef3`](https://github.com/jonathas/handlebars-helpers/commit/e275ef34217ab281fc82e5972770845336a62418)
+- use object format for module.exports [`329f9d9`](https://github.com/jonathas/handlebars-helpers/commit/329f9d9a99f45a8b32ced62c72c2825c7ecbe242)
+- update readme, rename URL helpers to be consistent with camelcase [`71da640`](https://github.com/jonathas/handlebars-helpers/commit/71da640e64cc7e9832e8405dd6c4a1ef5d39d6f6)
+
+#### [0.2.9](https://github.com/jonathas/handlebars-helpers/compare/0.2.8...0.2.9)
+
+> 3 July 2017
+
+- fixing markdown helper to use the marked object from the options block [`#41`](https://github.com/jonathas/handlebars-helpers/pull/41)
+- Fixing when markdown options are initialized [`#40`](https://github.com/jonathas/handlebars-helpers/pull/40)
+- fix version in README [`f7635c4`](https://github.com/jonathas/handlebars-helpers/commit/f7635c4d10715c5ec7542a5169304fd8ce1663cf)
+- fixing markdown helper to use the marked object from the options block instead of just all options. re-compiled after doing npm install again [`a4d02fe`](https://github.com/jonathas/handlebars-helpers/commit/a4d02fe1f2748d5510527030fd377cf3e3d3bf17)
+- updating markdown helper to initialize markdown after the options have been initialized [`3cd6a12`](https://github.com/jonathas/handlebars-helpers/commit/3cd6a128c28816966058a8309efad2df44dc65db)
+
+#### [0.2.8](https://github.com/jonathas/handlebars-helpers/compare/0.2.7...0.2.8)
+
+> 3 July 2017
+
+- withSort does not sort properly [`#34`](https://github.com/jonathas/handlebars-helpers/pull/34)
+- many code quality improvements, removed some tests and non-"core" helpers (moving to another lib) [`a6ba904`](https://github.com/jonathas/handlebars-helpers/commit/a6ba904cca0b52d7353c49b486af732755325ce9)
+- remove HTML helpers [`0c86936`](https://github.com/jonathas/handlebars-helpers/commit/0c86936f3df4ee0c756b028dbf3689c874a274ff)
+- remove HTML helpers [`48d1042`](https://github.com/jonathas/handlebars-helpers/commit/48d1042f7b6dfda325c200c6c72dde7b1ae7b4e0)
+
+#### 0.2.7
+
+> 3 July 2017
+
+- Change order of rendering for glob helper [`#28`](https://github.com/jonathas/handlebars-helpers/pull/28)
+- Adding object globbing [`#27`](https://github.com/jonathas/handlebars-helpers/pull/27)
+- Updating usage documentation [`#26`](https://github.com/jonathas/handlebars-helpers/pull/26)
+- New helper: sum [`#25`](https://github.com/jonathas/handlebars-helpers/pull/25)
+- helper: toAbbr [`#20`](https://github.com/jonathas/handlebars-helpers/pull/20)
+- templates for tests [`2f4d921`](https://github.com/jonathas/handlebars-helpers/commit/2f4d9212081a74ee177d9c8950c765bbd5ec60c2)
+- deleted a bunch of non-working example stuff [`45e7bb7`](https://github.com/jonathas/handlebars-helpers/commit/45e7bb7d6394a03497cfcd0883cd45c52df07047)
+- building javascript files [`96cdb9e`](https://github.com/jonathas/handlebars-helpers/commit/96cdb9e5dff5676d571d5f7f1b399aeb965acea5)
