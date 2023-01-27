@@ -2,13 +2,13 @@ name: tests
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, develop ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, develop ]
 
 jobs:
   setup-build-deploy:
-    name: Build and Deploy to Dev
+    name: tests
     runs-on: ubuntu-latest
 
     strategy:
