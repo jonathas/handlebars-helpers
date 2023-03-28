@@ -106,7 +106,7 @@
     "year": "^0.2.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.4.4",
+    "@commitlint/cli": "^17.5.0",
     "@commitlint/config-conventional": "^17.4.4",
     "auto-changelog": "^2.4.0",
     "engine-handlebars": "^1.1.0",
@@ -125,7 +125,7 @@
     "js-yaml": "^4.1.0",
     "markdown-link": "^0.1.1",
     "mocha": "^10.2.0",
-    "release-it": "^15.6.0",
+    "release-it": "^15.9.3",
     "template-helpers": "^1.0.1",
     "templates": "^1.2.9",
     "through2": "^4.0.2",
