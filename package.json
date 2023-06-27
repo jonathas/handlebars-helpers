@@ -106,8 +106,8 @@
     "year": "^0.2.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.1",
-    "@commitlint/config-conventional": "^17.6.1",
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
     "auto-changelog": "^2.4.0",
     "engine-handlebars": "^1.1.0",
     "fs-exists-sync": "^0.1.0",
@@ -125,7 +125,7 @@
     "js-yaml": "^4.1.0",
     "markdown-link": "^0.1.1",
     "mocha": "^10.2.0",
-    "release-it": "^15.10.1",
+    "release-it": "^15.11.0",
     "template-helpers": "^1.0.1",
     "templates": "^1.2.9",
     "through2": "^4.0.2",
